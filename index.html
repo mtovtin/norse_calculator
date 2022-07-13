@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+
+
+  <div id="main">
+    <div id="left">
+      <div>
+        <span class="texts">Bill</span>
+        <div id="bill_field"> <span id="dollar_icon"> <img src="./images/icon-dollar.svg" alt=""></span>
+          <input id="bill" placeholder="0" type="text">
+        </div>
+      </div>
+      <div> <span class="texts"> Select Tip %</span>
+
+        <div id="buttons">
+          <button id="button5">5%</button>
+          <button id="button10">10%</button>
+          <button id="button15">15%</button>
+          <button id="button25">25%</button>
+          <button id="button50">50%</button>
+          <button id="custom_button">
+            <input id="cust_tip" type="text" placeholder="Custom">
+          </button>
+        </div>
+
+      </div>
+      <div>
+        <span class="texts"> Number of People</span>
+
+        <div id="second_input"> <span id="person_icon"> <img src="./images/icon-person.svg" alt=""></span> <input id="quantity" type="text" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div id="right">
+      <div class="totals">
+        <div>
+          <span class="pr_text" >Tip Amount</span>
+          <div class="sec_text">/ person</div>
+        </div>
+
+        <div class="res_text" >$<span id="tip_amount"></span></div>
+      </div>
+
+      <div id="total_with_margin" class="totals">
+        <div>
+          <span class="pr_text">Total</span>
+          <div class="sec_text">/ person</div>
+        </div>
+
+        <div class="res_text">$<span id="total"></span></div>
+      </div>
+
+      <div id="res">
+        <button id="reset_button">RESET</button>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./scripts.js"></script>
+</body>
+</html>
+
